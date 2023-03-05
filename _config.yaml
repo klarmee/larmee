@@ -1,0 +1,7 @@
+theme:
+defaults:
+  - scope:
+      path: "img"
+    values:
+      image: true
+

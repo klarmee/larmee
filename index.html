@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign imgs = site.static_files | where: "image", true %}
+<noscript>
+{% for img in imgs %}<img src="https://raw.githubusercontent.com/klarmee/larmee/img/main{{ img.path }}" data-time="{{ img.modified_time }}">{% endfor %}
+</noscript>
